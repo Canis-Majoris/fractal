@@ -1,0 +1,45 @@
+.NavItem {
+    color: #ccc;
+    font-size: 18pt;
+    font-weight: 500;
+    transition: all .1s ease-out;
+    cursor: pointer;
+    list-style-type: none;
+    display: flex;
+    margin-right: 5rem;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.NavItem:last-child {
+    margin-right: 0;
+}
+
+.NavItem:hover, .NavItem:focus {
+    color: #a7a6a6;
+}
+
+.NavItem:after {
+    content: '';
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 2px;
+    border-radius: 1px;
+    box-shadow: 1px 1px 1px #ccc;
+    background-color: #5866c3;
+    position: absolute;
+    left: 0;
+    bottom: -.25rem;
+    transition: all .1s ease-out;
+}
+
+.NavItem.active:after {
+    width: 1.5rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.NavItem.active {
+    color: #636363;
+}
