@@ -45,7 +45,6 @@ const Data = props => {
 					/>
 					<div style={{ textAlign: 'center' }}>
 						<strong>Angle: {slider}</strong>
-						
 						<br />
 						<input
 							type="range"
