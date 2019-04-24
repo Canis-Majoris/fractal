@@ -44,7 +44,7 @@ const Data = props => {
 						onUpdateSliderValue={updateSliderValue}
 					/>
 					<div style={{ textAlign: 'center' }}>
-						<strong>Angle: {slider}</strong>
+						<small>Angle: {slider}</small>
 						<br />
 						<input
 							type="range"
